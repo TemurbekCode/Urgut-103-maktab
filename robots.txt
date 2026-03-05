@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://urgut-103-maktab.netlify.app/sitemap.xml
