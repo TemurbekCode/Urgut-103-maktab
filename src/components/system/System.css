@@ -1,0 +1,73 @@
+.system {
+  padding: 80px 0;
+  background: #f3f4f6;
+}
+
+.system-container {
+  width: 90%;
+  margin: auto;
+}
+
+.system-title {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.system-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.system-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.system-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.system-icon {
+  width: 70px;
+  height: 70px;
+  background: #e0e7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  color: #1e3a8a;
+}
+
+.system-card h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.system-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.system-card button {
+  padding: 8px 20px;
+  border: none;
+  background: #1e3a8a;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.system-card button:hover {
+  background: #162c6e;
+}

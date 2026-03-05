@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galleryContainer {
+    width: 100%;
+}
+
+.gallery {
+    color: darkblue;
+    padding: 80px 100px;
+    font-size: 2.5rem;
+}
+
+.view-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: -50px 10px;
+    font-size: 0.9rem;
+}
+
+.carousel-container {
+    height: auto;
+    padding: 100px 0;
+}
+
+.rom {
+    width: 80%;
+    height: 70vh;
+    border-radius: 16px;
+    padding: 30px;
+    color: white;
+    margin: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.rom::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+}
+
+.rom>* {
+    position: relative;
+    z-index: 2;
+}
+
+.rom1 {
+    background-image: url("/school2.png");
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.tital {
+    font-size: 4rem;
+}
+
+.text-card {
+    font-size: 1.5rem;
+}
+
+.btn-gallery {
+    width: 80%;
+    height: 33px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    background: darkblue;
+    color: #ffffffff;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-gallery:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .rom {
+        width: 90%;
+        height: 65vh;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        font-size: 2rem;
+        margin: 0 -50px;
+    }
+}
