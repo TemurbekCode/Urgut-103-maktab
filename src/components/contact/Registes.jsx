@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 const SERVICE_ID = "service_a8d852d";
 const TEMPLATE_ID = "template_bqk9d0f";
-const PUBLIC_KEY = "YOUR_PUBLIC_KEY"; // .env ga ko‘chirish tavsiya qilinadi
+const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
 
 function Register() {
   const { t } = useTranslation();
@@ -50,7 +50,7 @@ function Register() {
           </div>
         </div>
 
-        {/* RIGHT FORM */}
+        {/* RIGHT */}
         <form className="register-form" onSubmit={sendEmail}>
           <h3>{t("apply")}</h3>
 
